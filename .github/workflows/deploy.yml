@@ -28,7 +28,6 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist
-        with:
           package-manager: npm
         # with:
           # path: . # The root location of your Astro project inside the repository. (optional)
