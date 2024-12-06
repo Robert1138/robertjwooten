@@ -22,14 +22,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
         uses: withastro/action@v3
-
-        - name: Build Astro
-          run: npm run build --if-present
-
-        - name: Upload artifact
-          uses: actions/upload-pages-artifact@v1
-          with:
-            path: ./dist
+      - name: Build Astro
+        run: npm run build --if-present
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./dist
         with:
           package-manager: npm
         # with:
