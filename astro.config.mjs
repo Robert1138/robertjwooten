@@ -14,7 +14,7 @@ import vercel from '@astrojs/vercel/serverless'
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://Robert1138.github.io',
-  // base: '/robertjwooten',
+  base: '/robertjwooten',
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		tailwind({
@@ -42,8 +42,8 @@ export default defineConfig({
 		}
 	},
 	prefetch: true,
-	output: 'static',
-	outDir: './dist',
+	output: 'server',
+	// outDir: './dist',
 	// adapter: vercel({
 	// 	webAnalytics: { enabled: true }
 	// })
