@@ -13,8 +13,8 @@ import vercel from '@astrojs/vercel/serverless'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://Robert1138.github.io',
-  base: '/robertjwooten',
+	site: 'https://robertjwooten.com',
+  // base: '/robertjwooten', // not needed with custom domain
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		tailwind({
